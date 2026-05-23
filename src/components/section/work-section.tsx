@@ -35,8 +35,8 @@ export default function WorkSection() {
     <Accordion type="single" collapsible className="w-full grid gap-6">
       {DATA.work.map((work) => (
         <AccordionItem
-          key={work.company}
-          value={work.company}
+          key={`${work.company}-${work.start}`}
+          value={`${work.company}-${work.start}`}
           className="w-full border-b-0 grid gap-2"
         >
           <AccordionTrigger className="hover:no-underline p-0 cursor-pointer transition-colors rounded-none group [&>svg]:hidden">
