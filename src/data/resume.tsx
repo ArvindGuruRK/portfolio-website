@@ -7,6 +7,29 @@ import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Python } from "@/components/ui/svgs/python";
 import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Docker } from "@/components/ui/svgs/docker";
+import type { SVGProps } from "react";
+import {
+  SiFastapi,
+  SiTailwindcss,
+  SiShadcnui,
+  SiLangchain,
+  SiSupabase,
+  SiRedis,
+  SiPrisma,
+  SiHtml5,
+  SiCss,
+  SiGit,
+  SiJira,
+  SiPostman,
+} from "react-icons/si";
+
+const brand = (
+  Icon: React.ComponentType<{ color?: string; className?: string }>,
+  color: string,
+) =>
+  (props: SVGProps<SVGSVGElement>) => (
+    <Icon color={color} className={props.className} />
+  );
 
 export const DATA = {
   name: "Arvind R K",
@@ -27,20 +50,20 @@ export const DATA = {
     { name: "Python", icon: Python },
     { name: "Postgres", icon: Postgresql },
     { name: "Docker", icon: Docker },
-    { name: "FastAPI", icon: null },
-    { name: "Tailwind CSS", icon: null },
-    { name: "shadcn/ui", icon: null },
-    { name: "LangChain", icon: null },
-    { name: "Supabase", icon: null },
-    { name: "Redis", icon: null },
-    { name: "Prisma ORM", icon: null },
+    { name: "FastAPI", icon: brand(SiFastapi, "#009688") },
+    { name: "Tailwind CSS", icon: brand(SiTailwindcss, "#06B6D4") },
+    { name: "shadcn/ui", icon: brand(SiShadcnui, "#000000") },
+    { name: "LangChain", icon: brand(SiLangchain, "#1C3C3C") },
+    { name: "Supabase", icon: brand(SiSupabase, "#3ECF8E") },
+    { name: "Redis", icon: brand(SiRedis, "#DC382D") },
+    { name: "Prisma ORM", icon: brand(SiPrisma, "#2D3748") },
     { name: "FAISS", icon: null },
     { name: "Recharts", icon: null },
-    { name: "HTML", icon: null },
-    { name: "CSS", icon: null },
-    { name: "Git", icon: null },
-    { name: "Jira", icon: null },
-    { name: "Postman", icon: null },
+    { name: "HTML", icon: brand(SiHtml5, "#E34F26") },
+    { name: "CSS", icon: brand(SiCss, "#1572B6") },
+    { name: "Git", icon: brand(SiGit, "#F05032") },
+    { name: "Jira", icon: brand(SiJira, "#0052CC") },
+    { name: "Postman", icon: brand(SiPostman, "#FF6C37") },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -78,7 +101,7 @@ export const DATA = {
       badges: [],
       location: "Chennai, India",
       title: "Associate Software Developer",
-      logoUrl: "/trident.png",
+      logoUrl: "/trident.jpg",
       start: "Oct 2025",
       end: "Present",
       description:
@@ -90,7 +113,7 @@ export const DATA = {
       badges: [],
       location: "Chennai, India",
       title: "Software Engineer Intern",
-      logoUrl: "/trident.png",
+      logoUrl: "/trident.jpg",
       start: "Apr 2025",
       end: "Jun 2025",
       description:
@@ -102,7 +125,7 @@ export const DATA = {
       school: "Rajalakshmi Institute of Technology",
       href: "https://ritchennai.org",
       degree: "Bachelor of Engineering in Computer Science — 8.2 CGPA",
-      logoUrl: "/rit.png",
+      logoUrl: "/rit_logo.jpg",
       start: "2021",
       end: "2025",
     },
