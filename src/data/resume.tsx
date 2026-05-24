@@ -57,8 +57,6 @@ export const DATA = {
     { name: "Supabase", icon: brand(SiSupabase, "#3ECF8E") },
     { name: "Redis", icon: brand(SiRedis, "#DC382D") },
     { name: "Prisma ORM", icon: brand(SiPrisma, "#2D3748") },
-    { name: "FAISS", icon: null },
-    { name: "Recharts", icon: null },
     { name: "HTML", icon: brand(SiHtml5, "#E34F26") },
     { name: "CSS", icon: brand(SiCss, "#1572B6") },
     { name: "Git", icon: brand(SiGit, "#F05032") },
