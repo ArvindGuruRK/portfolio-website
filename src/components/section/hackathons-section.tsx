@@ -12,38 +12,38 @@ function getCertificateIcon(title: string) {
 
   if (lowerTitle.includes("ibm") || lowerTitle.includes("generative ai")) {
     return {
-      icon: <BrainCircuit className="size-5 text-indigo-400" />,
-      className: "bg-gradient-to-br from-indigo-950/80 via-slate-900/90 to-indigo-900/40 border-indigo-500/40 ring-indigo-500/10",
+      icon: <BrainCircuit className="size-5 text-indigo-600 dark:text-indigo-400" />,
+      className: "bg-gradient-to-br from-indigo-50/90 via-slate-50 to-indigo-100/50 border-indigo-200/60 ring-indigo-500/5 dark:from-indigo-950/80 dark:via-slate-900/90 dark:to-indigo-900/40 dark:border-indigo-500/40 dark:ring-indigo-500/10",
     };
   }
   if (lowerTitle.includes("database") || lowerTitle.includes("dbms") || lowerTitle.includes("nptel")) {
     return {
-      icon: <Database className="size-5 text-blue-400" />,
-      className: "bg-gradient-to-br from-blue-950/80 via-slate-900/90 to-blue-900/40 border-blue-500/40 ring-blue-500/10",
+      icon: <Database className="size-5 text-blue-600 dark:text-blue-400" />,
+      className: "bg-gradient-to-br from-blue-50/90 via-slate-50 to-blue-100/50 border-blue-200/60 ring-blue-500/5 dark:from-blue-950/80 dark:via-slate-900/90 dark:to-blue-900/40 dark:border-blue-500/40 dark:ring-blue-500/10",
     };
   }
   if (lowerTitle.includes("python")) {
     return {
       icon: <Python className="size-5" />,
-      className: "bg-gradient-to-br from-sky-950/80 via-slate-900/90 to-amber-950/30 border-sky-500/30 ring-sky-500/10",
+      className: "bg-gradient-to-br from-sky-50/90 via-slate-50 to-amber-50/40 border-sky-200/50 ring-sky-500/5 dark:from-sky-950/80 dark:via-slate-900/90 dark:to-amber-950/30 dark:border-sky-500/30 dark:ring-sky-500/10",
     };
   }
   if (lowerTitle.includes("data science")) {
     return {
-      icon: <LineChart className="size-5 text-emerald-400" />,
-      className: "bg-gradient-to-br from-emerald-950/80 via-slate-900/90 to-emerald-900/40 border-emerald-500/40 ring-emerald-500/10",
+      icon: <LineChart className="size-5 text-emerald-600 dark:text-emerald-400" />,
+      className: "bg-gradient-to-br from-emerald-50/90 via-slate-50 to-emerald-100/50 border-emerald-200/60 ring-emerald-500/5 dark:from-emerald-950/80 dark:via-slate-900/90 dark:to-emerald-900/40 dark:border-emerald-500/40 dark:ring-emerald-500/10",
     };
   }
   if (lowerTitle.includes("java")) {
     return {
       icon: <Java className="size-5" />,
-      className: "bg-gradient-to-br from-amber-950/80 via-slate-900/90 to-sky-950/30 border-amber-500/30 ring-amber-500/10",
+      className: "bg-gradient-to-br from-amber-50/90 via-slate-50 to-sky-50/40 border-amber-200/50 ring-amber-500/5 dark:from-amber-950/80 dark:via-slate-900/90 dark:to-sky-950/30 dark:border-amber-500/30 dark:ring-amber-500/10",
     };
   }
   if (lowerTitle.includes("project") || lowerTitle.includes("final year")) {
     return {
-      icon: <GraduationCap className="size-5 text-amber-400" />,
-      className: "bg-gradient-to-br from-amber-950/80 via-slate-900/90 to-amber-900/40 border-amber-500/40 ring-amber-500/10",
+      icon: <GraduationCap className="size-5 text-amber-600 dark:text-amber-400" />,
+      className: "bg-gradient-to-br from-amber-50/90 via-slate-50 to-amber-100/50 border-amber-200/60 ring-amber-500/5 dark:from-amber-950/80 dark:via-slate-900/90 dark:to-amber-900/40 dark:border-amber-500/40 dark:ring-amber-500/10",
     };
   }
 
