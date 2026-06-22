@@ -11,25 +11,25 @@ function getCertificateIcon(title: string) {
   const lowerTitle = title.toLowerCase();
 
   if (lowerTitle.includes("ibm") || lowerTitle.includes("generative ai")) {
-    return <BrainCircuit className="size-5 text-indigo-600 dark:text-indigo-400" />;
+    return <BrainCircuit className="size-4 md:size-5 text-indigo-600 dark:text-indigo-400" />;
   }
   if (lowerTitle.includes("database") || lowerTitle.includes("dbms") || lowerTitle.includes("nptel")) {
-    return <Database className="size-5 text-blue-600 dark:text-blue-400" />;
+    return <Database className="size-4 md:size-5 text-blue-600 dark:text-blue-400" />;
   }
   if (lowerTitle.includes("python")) {
-    return <Python className="size-5" />;
+    return <Python className="size-4 md:size-5" />;
   }
   if (lowerTitle.includes("data science")) {
-    return <LineChart className="size-5 text-emerald-600 dark:text-emerald-400" />;
+    return <LineChart className="size-4 md:size-5 text-emerald-600 dark:text-emerald-400" />;
   }
   if (lowerTitle.includes("java")) {
-    return <Java className="size-5" />;
+    return <Java className="size-4 md:size-5" />;
   }
   if (lowerTitle.includes("project") || lowerTitle.includes("final year")) {
-    return <GraduationCap className="size-5 text-amber-600 dark:text-amber-400" />;
+    return <GraduationCap className="size-4 md:size-5 text-amber-600 dark:text-amber-400" />;
   }
 
-  return <Award className="size-5 text-muted-foreground" />;
+  return <Award className="size-4 md:size-5 text-muted-foreground" />;
 }
 
 export default function HackathonsSection() {
@@ -61,10 +61,10 @@ export default function HackathonsSection() {
                     <img
                       src={hackathon.image}
                       alt={hackathon.title}
-                      className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border object-contain flex-none"
+                      className="size-8 md:size-10 bg-background z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border object-contain flex-none"
                     />
                   ) : (
-                    <div className="size-10 z-10 shrink-0 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex items-center justify-center flex-none transition-all duration-300 hover:scale-110">
+                    <div className="size-8 md:size-10 z-10 shrink-0 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex items-center justify-center flex-none transition-all duration-300 hover:scale-110">
                       {certIcon}
                     </div>
                   )}
