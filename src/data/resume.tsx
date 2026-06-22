@@ -38,19 +38,19 @@ export const DATA = {
   location: "Chennai, India",
   locationLink: "https://www.google.com/maps/place/chennai",
   description:
-    "Full-Stack Developer building production-grade web apps and AI-powered systems. Currently shipping insurance portals at Trident Solutions and exploring LLMs, RAG, and voice agents.",
+    "Full-Stack Developer passionate about building elegant, responsive, and user-centric web applications.",
   summary:
-    "I'm a Full-Stack Developer based in Chennai with hands-on experience building production web applications and AI-native systems. At [Trident Solutions](#work), I work on the [Vibe Insurance Broking](#work) platform — developing dynamic UI pages and API integrations across Employee, Corporate, and Admin portals using Next.js and React, and integrating third-party insurance APIs into the Vibe Policy Engine. On the side, I'm building [GradGear](#projects), an AI-powered EdTech platform featuring a voice tutor agent for Indian K-12 students, built on a three-tier monorepo with LangChain + Pinecone for RAG. I hold a BE in Computer Science from [Rajalakshmi Institute of Technology](#education). I'm passionate about shipping scalable, AI-native products and continuously evolving with modern dev practices.",
+    "I am a Full-Stack Developer dedicated to crafting clean, high-performance, and user-friendly web applications. I love turning complex problems into simple, elegant digital experiences, blending solid backend foundations with smooth, intuitive user interfaces. Passionate about modern development practices, continuous learning, and clean code, I am always excited to collaborate on building impactful software solutions that make a difference.",
   avatarUrl: "/me.png",
   skills: [
-    { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
-    { name: "Node.js", icon: Nodejs },
     { name: "Python", icon: Python },
+    { name: "FastAPI", icon: brand(SiFastapi, "#009688") },
+    { name: "Typescript", icon: Typescript },
+    { name: "React", icon: ReactLight },
+    { name: "Node.js", icon: Nodejs },
     { name: "Postgres", icon: Postgresql },
     { name: "Docker", icon: Docker },
-    { name: "FastAPI", icon: brand(SiFastapi, "#009688") },
     { name: "Tailwind CSS", icon: brand(SiTailwindcss, "#06B6D4") },
     { name: "shadcn/ui", icon: brand(SiShadcnui, "#000000") },
     { name: "LangChain", icon: brand(SiLangchain, "#1C3C3C") },
@@ -120,12 +120,28 @@ export const DATA = {
   ],
   education: [
     {
+      school: "SRM Institute of Science and Technology",
+      href: "https://www.srmist.edu.in",
+      degree: "M.Tech in Data Science and Artificial Intelligence",
+      logoUrl: "/srm_logo.png",
+      start: "2026",
+      end: "Present",
+    },
+    {
       school: "Rajalakshmi Institute of Technology",
       href: "https://ritchennai.org",
       degree: "Bachelor of Engineering in Computer Science — 8.2 CGPA",
       logoUrl: "/rit_logo.jpg",
       start: "2021",
       end: "2025",
+    },
+    {
+      school: "Velammal Vidhyashram",
+      href: "https://velammal.org/velammal-vidhyashram-surapet/",
+      degree: "CBSE — Class X & XII — 78%",
+      logoUrl: "/velammal_logo-modified.png",
+      start: "2008",
+      end: "2021",
     },
   ],
   projects: [
@@ -135,10 +151,9 @@ export const DATA = {
       dates: "Apr 2026 - Present",
       active: true,
       description:
-        "Building a comprehensive AI-driven student platform featuring **Miss Alissa**, a voice tutor agent for Indian K-12 students with an STT/TTS pipeline-aligned RAG. Architected a three-tier monorepo (Next.js frontend, NestJS API gateway, FastAPI AI service) with LangChain + Pinecone vector search for context-aware responses.",
+        "Building a comprehensive **AI-driven student platform** featuring **Miss Alissa**, a voice tutor agent for Indian K-12 students with an **STT/TTS pipeline-aligned RAG**. Architected a **three-tier monorepo** (Next.js, NestJS, FastAPI) with **LangChain + Pinecone** vector search for context-aware responses.",
       technologies: [
         "Next.js",
-        "NestJS",
         "FastAPI",
         "TypeScript",
         "Python",
@@ -147,7 +162,7 @@ export const DATA = {
         "PostgreSQL",
       ],
       links: [],
-      image: "",
+      image: "/gradgear.png",
       video: "",
     },
     {
@@ -156,7 +171,7 @@ export const DATA = {
       dates: "May 2026 - Present",
       active: true,
       description:
-        "Real-time computer-vision tool that monitors student engagement during classroom sessions using head-pose estimation and eye-gaze tracking. Surfaces live attention analytics to teachers via a dashboard so they can adapt their delivery on the fly.",
+        "Developed a **real-time computer-vision tool** that monitors student engagement during classroom sessions using **head-pose estimation** and **eye-gaze tracking**. Surfaces **live attention analytics** to teachers via a dashboard so they can adapt their delivery on the fly.",
       technologies: [
         "Python",
         "OpenCV",
@@ -165,7 +180,7 @@ export const DATA = {
         "React",
       ],
       links: [],
-      image: "",
+      image: "/attention_monitor.png",
       video: "",
     },
     {
@@ -174,7 +189,7 @@ export const DATA = {
       dates: "Apr 2025 - Jun 2025",
       active: true,
       description:
-        "Developed a semantic file search engine supporting hybrid retrieval — combining keyword, semantic, and metadata-based search across multi-format documents. Integrated the Ollama Mistral LLM for natural-language document querying, enabling accurate AI-powered responses grounded in uploaded file content.",
+        "Developed a **semantic file search engine** supporting **hybrid retrieval** — combining keyword, semantic, and metadata-based search across multi-format documents. Integrated the **Ollama Mistral LLM** for natural-language document querying, enabling **accurate AI-powered responses** grounded in uploaded file content.",
       technologies: [
         "Python",
         "FastAPI",
@@ -184,7 +199,26 @@ export const DATA = {
         "LangChain",
       ],
       links: [],
-      image: "",
+      image: "/file_search.png",
+      video: "",
+    },
+    {
+      title: "E-Commerce Platform",
+      href: "#",
+      dates: "Jan 2026 - Mar 2026",
+      active: true,
+      description:
+        "Designed and built a modern, responsive full-stack e-commerce application. Integrated **Firebase** for secure user authentication and real-time Firestore database management, including cart state synchronization and order history tracking. Integrated **Cashfree Payments** gateway for seamless, secure checkout flows, and implemented automatic email transactional alerts (order confirmations, shipping updates) via the **Resend** mail transfer API.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Firebase Auth",
+        "Firestore",
+        "Cashfree SDK",
+        "Resend API",
+      ],
+      links: [],
+      image: "/ecommerce.png",
       video: "",
     },
   ],
