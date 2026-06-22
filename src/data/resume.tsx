@@ -26,10 +26,13 @@ import {
 const brand = (
   Icon: React.ComponentType<{ color?: string; className?: string }>,
   color: string,
-) =>
-  (props: SVGProps<SVGSVGElement>) => (
+) => {
+  const BrandIconComponent = (props: SVGProps<SVGSVGElement>) => (
     <Icon color={color} className={props.className} />
   );
+  BrandIconComponent.displayName = `BrandIcon(${Icon.displayName || Icon.name || "Icon"})`;
+  return BrandIconComponent;
+};
 
 export const DATA = {
   name: "Arvind R K",
